@@ -9,7 +9,7 @@
 </div>
 
 <br />
-PACE is a dual-level RL method that reduces reasoning tokens while maintaining (or improving) accuracy by combining (1) prefix-protected optimization and (2) difficulty-aware length penalties.
+PACE is a dual-level RL method that reduces reasoning tokens while maintaining accuracy by combining (1) prefix-protected optimization and (2) difficulty-aware length penalties.
 
 ## How to Use
 
