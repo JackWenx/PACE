@@ -122,6 +122,6 @@ This project is built on top of **verl (v0.6.0)** and uses **lightEval** for sta
 * **verl (v0.6.0)**: [https://github.com/volcengine/verl](https://github.com/volcengine/verl)
 * **lightEval**: [https://github.com/huggingface/lighteval](https://github.com/huggingface/lighteval)
 * **LiveCodeBench**: [https://github.com/LiveCodeBench/LiveCodeBench](https://github.com/LiveCodeBench/LiveCodeBench)
-* **IFEval**: [https://github.com/google-research/google-research/tree/master/ifeval](https://github.com/google-research/google-research/tree/master/ifeval)
+* **IFEval**: [https://github.com/UKGovernmentBEIS/inspect_evals/tree/main/src/inspect_evals/ifeval](https://github.com/UKGovernmentBEIS/inspect_evals/tree/main/src/inspect_evals/ifeval)
 
 ---
