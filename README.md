@@ -64,7 +64,8 @@ PACE is typically run with a GRPO loop in **verl**, using:
 Paper hyperparameters (PACE-7B special setting):
 * `L_init`: 512
 * prefix protection steps `K`: 100
-Example (replace config paths with yours):
+
+Quick Start:
 ```bash
 python -m pace.train \
   --config configs/pace_7b.yaml \
