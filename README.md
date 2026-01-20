@@ -142,7 +142,7 @@ For instruction-following evaluation, we use the official **IFEval** repository 
 
 This project is built on top of **verl** and uses **lightEval** for standard benchmark evaluation. We also rely on the official repositories for **LiveCodeBench** and **IFEval** evaluation.
 
-* **verl (v0.6.0)**: [https://github.com/volcengine/verl](https://github.com/volcengine/verl)
+* **verl**: [https://github.com/volcengine/verl](https://github.com/volcengine/verl)
 * **lightEval**: [https://github.com/huggingface/lighteval](https://github.com/huggingface/lighteval)
 * **LiveCodeBench**: [https://github.com/LiveCodeBench/LiveCodeBench](https://github.com/LiveCodeBench/LiveCodeBench)
 * **IFEval**: [https://github.com/google-research/google-research/tree/master/instruction_following_eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval)
