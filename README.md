@@ -45,14 +45,6 @@ pip install -r requirements.txt
 ```
 
 ---
-### Model
-Install remaining dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
 
 ### Model
 
