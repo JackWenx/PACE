@@ -118,7 +118,7 @@ For instruction-following evaluation, we use the official **IFEval** repository 
 
 ## Acknowledgments
 
-This project is built on top of **verl (v0.6.0)** and uses **lightEval** for standard benchmark evaluation. We also rely on the official repositories for **LiveCodeBench** and **IFEval** evaluation.
+This project is built on top of **verl** and uses **lightEval** for standard benchmark evaluation. We also rely on the official repositories for **LiveCodeBench** and **IFEval** evaluation.
 
 * **verl (v0.6.0)**: [https://github.com/volcengine/verl](https://github.com/volcengine/verl)
 * **lightEval**: [https://github.com/huggingface/lighteval](https://github.com/huggingface/lighteval)
