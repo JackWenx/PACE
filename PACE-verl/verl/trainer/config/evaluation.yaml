@@ -1,0 +1,19 @@
+data:
+  path: /tmp/math_Qwen2-7B-Instruct.parquet
+  prompt_key: prompt
+  response_key: responses
+  data_source_key: data_source
+  reward_model_key: reward_model
+
+custom_reward_function:
+  path: null
+  name: compute_score
+
+# configs related to ray initialization
+ray_init:
+
+  # Number of CPUs for Ray. Use a fixed number instead of null when using SLURM.
+  num_cpus: null
+
+  # Path to save Ray timeline JSON for performance profiling
+  timeline_json_file: null

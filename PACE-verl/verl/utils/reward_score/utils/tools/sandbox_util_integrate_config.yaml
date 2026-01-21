@@ -1,0 +1,60 @@
+tools:
+  - class_name: "verl.utils.reward_score.utils.tools.sandbox_fusion_tools.SandboxFusionTool"
+    config: 
+      sandbox_fusion_url_path: "/code/fengruixiang/Daily/ip_pool/sandbox_ips.txt"
+      num_workers: 10
+      enable_global_rate_limit: False
+      rate_limit: 10
+      default_timeout: 60
+      default_language: "python"
+
+    tool_schema:
+      type: "function"
+      function:
+        name: "python_interpreter"
+        description: >-
+          Executes a complete, runnable Python code. The code must be well-structured, preferably with a 'main()' function, 
+          and wrapped in a Python markdown block as shown in the parameter description.
+          Note: Common packages (math, collections, re, etc.) are pre-imported, so do NOT include standard 'import' statements.
+        parameters:
+          type: "object"
+          properties:
+            code:
+              type: "string"
+              description: |
+                A string containing a full Python code.
+                The code should define its logic within a 'main()' function and call it using an 'if __name__ == "__main__":' block. 
+                The final, concise result must be printed to the console using the 'print()' function.
+
+                For example:
+                def main():
+                    # Your code logic here
+                    result = 10 * 5
+                    print(result)
+
+                if __name__ == "__main__":
+                    main()
+          required: ["code"]  # Moved this to the correct level - same level as properties and type
+  
+  - class_name: "verl.utils.reward_score.utils.tools.unit_conversion_tool.UnitConversionTool"
+    config: {}
+    tool_schema:
+      type: "function"
+      function:
+        name: "unit_conversion"
+        description: >-
+          Performs precise physical unit conversions. Handles length, mass, time, pressure, energy, and complex compound units (e.g., velocity, acceleration).
+          IMPORTANT: For temperature, use 'degC', 'degF', 'K'. For scientific notation like '1.8 * 10^5 Pa', the value must be fully resolved to a number.
+        parameters:
+          type: "object"
+          properties:
+            value:
+              type: "number"
+              description: "The complete numerical value to be converted, as a single float or integer. If the value is in scientific notation (e.g., 1.8e5 or 1.8 * 10**5), calculate and pass the final number. Example: for '1.8 * 10^5', pass 180000."
+            source_unit:
+              type: "string"
+              description: "The unit of the input 'value'. Must be a standard physical unit symbol ONLY. Do NOT include numbers or scientific notation like '10^5' or 'e5'. Supports compound units with '/' for division and '^' or '**' for powers. Examples: 'kg', 'km/h', 'm/s^2', 'Pa', 'MJ', 'degC'."
+            target_unit:
+              type: "string"
+              description: "The desired unit to convert to. Must be dimensionally compatible with the source unit. Examples: 'g', 'm/s', 'ft/s^2', 'atm', 'kWh', 'degF'."
+          required: ["value", "source_unit", "target_unit"]
