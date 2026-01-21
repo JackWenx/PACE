@@ -52,7 +52,7 @@ pip install -r requirements.txt
 | [DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B) | [PACE-R1-Distill-Qwen-1.5B](https://www.modelscope.cn/models/unknown00/PACE-R1-Distill-Qwen-1.5B) |
 | [DeepSeek-R1-Distill-Qwen-7B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)     | [PACE-R1-Distill-Qwen-7B](https://www.modelscope.cn/models/unknown00/PACE-R1-Distill-Qwen-7B)     |
 
-**Download:**
+**Download PACE Model:**
 
 ```bash
 git clone https://www.modelscope.cn/unknown00/PACE-R1-Distill-Qwen-1.5B.git
