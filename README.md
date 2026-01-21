@@ -122,12 +122,6 @@ For code evaluation, we use the official **LiveCodeBench** pipeline.
 
 For instruction-following evaluation, we use the official **IFEval** repository and its evaluation scripts.
 
----
-
-### Replicate Paper Results (Quick Path)
-
----
-
 ## Acknowledgments
 
 This project is built on top of **verl** and uses **lightEval** for standard benchmark evaluation. We also rely on the official repositories for **LiveCodeBench** and **IFEval** evaluation.
