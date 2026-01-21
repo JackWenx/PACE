@@ -23,7 +23,7 @@ conda create -n pace python=3.10
 conda activate pace
 ```
 
-Install PyTorch (pick the right wheel for your CUDA setup):
+Install PyTorch:
 
 ```bash
 pip install torch torchvision torchaudio
@@ -81,8 +81,8 @@ Paper hyperparameters (PACE-7B special setting):
   
 Quick Start:
 ```bash
-../PACE/script/PACE-1.5B.sh
-../PACE/script/PACE-7B.sh
+../PACE-verl/script/PACE-1.5B.sh
+../PACE-verl/script/PACE-7B.sh
 ```
 ---
 
