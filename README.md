@@ -79,7 +79,7 @@ Paper hyperparameters (PACE-7B special setting):
 * `L_init`: 512
 * prefix protection steps `K`: 100
   
-Quick Start:
+**Quick Start:**
 ```bash
 ../PACE-verl/script/PACE-1.5B.sh
 ../PACE-verl/script/PACE-7B.sh
