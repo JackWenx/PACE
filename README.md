@@ -16,7 +16,7 @@ PACE is a dual-level RL method that reduces reasoning tokens while maintaining a
 ### Installation
 
 ```bash
-git clone <YOUR_REPO_URL>
+git clone <THIS_REPO_URL>
 cd <YOUR_REPO_DIR>
 
 conda create -n pace python=3.10
@@ -29,18 +29,17 @@ Install PyTorch (pick the right wheel for your CUDA setup):
 pip install torch torchvision torchaudio
 ```
 
-Install **verl (required: v0.6.0)**:
+Install PACE-verl:
 
 ```bash
-git clone https://github.com/volcengine/verl.git
-cd verl
+cd PACE-verl
 pip install -e .
-cd ..
 ```
 
 Install remaining dependencies:
 
 ```bash
+cd PACE-verl
 pip install -r requirements.txt
 ```
 
@@ -79,16 +78,15 @@ PACE is typically run with a GRPO loop in **verl**, using:
 Paper hyperparameters (PACE-7B special setting):
 * `L_init`: 512
 * prefix protection steps `K`: 100
-
+  
 Quick Start:
 ```bash
-python -m pace.train \
-  --config configs/pace_7b.yaml \
-  --data_path data/skywork_o1_train.jsonl
+../PACE/script/PACE-1.5B.sh
+../PACE/script/PACE-7B.sh
 ```
 ---
 
-### Evaluate
+### Evaluation
 
 #### 1) lightEval Benchmarks (AIME24 / AIME25 / MATH500 / GSM8K / GPQA-D)
 
